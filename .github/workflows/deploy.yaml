@@ -1,0 +1,17 @@
+name: hola mundo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-codigo-facilito:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludo desde GitHub Actions
+        run: echo "Hola mundo desde GitHub Actions"
+      - name: Deploy to Codigo Facilito
+        run: |
+          echo "Desplegando a Codigo Facilito..."
+          echo "Despliegue exitoso a Codigo Facilito"
